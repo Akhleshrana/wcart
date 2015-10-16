@@ -26,39 +26,72 @@
     <section class="registrationForm">
       <div class="container">
         <div class="row">
-          <div class="col-md-2"></div>
+          <div class="col-md-1"></div>
 
-          <div class="col-md-6">
-            <form class="form form-horizontal">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+          <div class="col-md-10">
+		  <div class="well">
+ <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          
+          <h4><span class="glyphicon glyphicon-user"></span> Registration</h4>
+        </div>
+        <div class="modal-body" >
+          <form class="form-horizontal" role="form" method="post">
+    <div class="form-group">
+      <label class="control-label col-sm-2 formlbl" for="name">First Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="firstname"  name="name" placeholder="First Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2 formlbl" for="lastname">Last Name:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="lastname" name="name" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="form-group">        
+      <label class="control-label col-sm-2 formlbl" for="email">Email Address:</label>
+      <div class="col-sm-10">          
+        <input type="email" class="form-control" id="email" name="add" placeholder="Email Address">
+    </div>
+	</div>
+    <div class="form-group">        
+      <label class="control-label col-sm-2 formlbl" for="password">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="password"  name="prs" placeholder="Password">
+      </div>
+    </div>
+	<div class="form-group">        
+      <label class="control-label col-sm-2 formlbl" for="confirmpassword">Confirm Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="confirmpassword"  name="prs" placeholder="Confirm Password">
+      </div>
+    </div>
+	<div class="form-group">        
+      <label class="control-label col-sm-2 formlbl" for="phonenumber">Phone Number:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="phonenumber"  name="prs" placeholder="Phone Number">
+      </div>
+    </div>
+	<center> <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsHost" value="host" checked>
+                  I am the wedding host
+                </label>
               </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsGuest" value="guest">
+                  I am a wedding guest
+                </label>
               </div>
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Email address">
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
-              </div>
-              <div class="form-group">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
-              </div>
-              <a href="events.html" type="submit" class="btn btn-default">Sign Up</a>
-            </form>
-          </div>
+	</center>
+	<a href="gift.html" button type="submit" class="btn btn-success btn-block" name="submit"><span class="glyphicon glyphicon-off"></span> Register</button></a>
+  </form>
+        </div>
+        
 
-          <div class="col-md-2"></div>
+          <div class="col-md-1"></div>
         </div>
       </div>
     </section>
