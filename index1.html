@@ -102,26 +102,24 @@
           <div class="col-md-4 login">
             <div class="panel panel-default login-panel">
               <div class="panel-heading">
-                <h3 class="panel-title">Login</h3>
+                <center><h3 class="panel-title">Login</h3></center>
               </div>
               <div class="panel-body">
-                <form class="login-form">
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputPassword3">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Enter Password">
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-default">Sign in</button><br>
-                </form>
-                <p class="signup"><a href="#">   Sign Up</a></p>
+			  <form role="form" method="post">
+            <div class="form-group">
+              <label class="control-label  formlbl"" for="usrname"><span class="glyphicon glyphicon-user"></span> Login Id</label>
+			  <input type="text" class="form-control" id="usrname" name="usrname" placeholder="Enter Login Id">
+            </div>
+            <div class="form-group">
+              <label class="control-label formlbl"" for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" class="form-control" id="psw" name="pwd" placeholder="******************">
+            </div>
+            <div class="checkbox">
+              <label class="control-label formlbl"><input type="checkbox" name ="remember" value="" not-checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-sm formbl" name="submit"><span></span> Sign In</button>
+			   <button type="submit" class="btn btn-success btn-sm formbl" name="submit"><span></span> Sign Up</button>
+          </form>
               </div>
             </div>
           </div>
