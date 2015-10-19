@@ -9,57 +9,47 @@
     <title>Wedding Cart</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../wcart_old/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../wcart_old/css/style.css" rel="stylesheet">
 	
-	<script type='text/javascript' src='js/jquery.js'> </script>
+	<script type='text/javascript' src='../wcart_old/js/jquery.js'> </script>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
   </head>
-<script type='text/javascript'> 
- $(document).ready(function(){
-
-	$('#dt').datepicker();
-
-});
-
-</script>
-
-  <body>
-
-    <header>
+<body>
+<header>
       <div class="container">
         <img src="img/logo1.png" class="logo" />      </div>
     </header>
-
-    <section class="edit-weddingdetails">
+	 <section class="edit-weddingdetails">
 	 <div class="container">
             <div class="row">
 			 <div class="panel panel-default">
 			 <div class="panel-heading messages">
                 <h5 class="heading4">Manage Wedding Details</h5>
-              </div>
-			  <div class="panel-body">
-			<div class="row">
-              <div class="col-sm-4">
-			  <div class="panel panel-success">
-			  <div class="panel-heading messages">
-			  <h3 class="panel-tital"><center>Invetation Card Details</center></h3>
-			  </div>
-			  <div class="panel-body">
-			  <div class="row">
-			  <div class="col-sm-12">
-			  <form class="form form-horizontal">
+				</div>
+				<div class="panel-body">
+              
+			   <div class="panel-group" id="accordion">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      
+        <a data-toggle="collapse" data-parent="#accordion" href="#invet" class="collapsed">
+        Invetation Card Details</a>
+      
+    </div>
+    <div id="invet" class="panel-collapse collapse in">
+      <div class="panel-body"> <form class="form form-horizontal">
 			 
 			   <div class="form-group">
 			   <label class="control-label col-sm-4" for="invetation">Invetation From</label>
 			   <div class="col-sm-8">
                  <label class="radio-inline"><input type="radio" name="opradio" value="Groom">Groom</label>
-   				<label class="radio-inline"><input type="radio" name="opradio" value="Brite">Bride</label>
+   				<label class="radio-inline"><input type="radio" name="opradio" value="Bride">Bride</label>
 					</div>
 						</div>
 				<div class="form-group">
@@ -69,7 +59,7 @@
 				</div>
 				</div>
 				<div class="form-group">
-				<label class="control-label col-sm-12" style="text-align:left">Venue Address</label>
+				<label class="control-label col-sm-4">Venue Address</label>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-4" for="house_no">House NO.</label>
@@ -122,28 +112,24 @@
 				</div>
 				</div>
 				
-				</form>
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
-				 <div class="col-sm-4">
-				<div class="panel panel-success">
-			  <div class="panel-heading messages">
-			  <h3 class="panel-tital"><center>Groom Details</center></h3>
-			  </div>
-			  <div class="panel-body">
-			   <div class="row">
-			  <div class="col-sm-12">
-			  <center>
-			  <form class="form form-horizontal">
+				</form></div>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+     
+        <a data-toggle="collapse" data-parent="#accordion" href="#grm">Groom's Details</a>
+      
+    </div>
+    <div id="grm" class="panel-collapse collapse">
+      <div class="panel-body">
+	  <form class="form form-horizontal">
 			  <div class="form-group">
-			  <label class="control-label col-sm-2" for="groom_img">Image</label>
-			  <div class="col-sm-7">
+			  <label class="control-label col-sm-4" for="groom_img">Image</label>
+			  <div class="col-sm-4">
 			  <input required type="file" name="file" id="file">
 			  </div>
-			  <div class="col-sm-3">
+			  <div class="col-sm-4">
 			  <button type="button" class="btn btn-default btm-sm">Upload</button>
 			  </div>
 			  </div>
@@ -219,27 +205,24 @@
 				</div>
 				</div>
 				</form>
-				</center>
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
-				<div class="col-sm-4">
-				<div class="panel panel-success">
-			  <div class="panel-heading messages">
-			  <h3 class="panel-tital"><center>Bride Details</center></h3>
-			  </div>
-			  <div class="panel-body">
-			   <div class="row">
-			  <div class="col-sm-12">
-			  <form class="form form-horizontal">
+	  </div>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+     
+        <a data-toggle="collapse" data-parent="#accordion" href="#brd">Bride's Details</a>
+     
+    </div>
+    <div id="brd" class="panel-collapse collapse">
+      <div class="panel-body">
+	   <form class="form form-horizontal">
               <div class="form-group">
-			  <label class="control-label col-sm-2" for="groom_img">Image</label>
-			  <div class="col-sm-7">
+			  <label class="control-label col-sm-4" for="groom_img">Image</label>
+			  <div class="col-sm-4">
 			  <input required type="file" name="file" id="file">
 			  </div>
-			  <div class="col-sm-3">
+			  <div class="col-sm-4">
 			  <button type="button" class="btn btn-default btm-sm">Upload</button>
 			  </div>
 			  </div>
@@ -316,22 +299,18 @@
 				</div>
 				</div>
 			 </form>
+			 <center><button type="button" class=" btn btn-primary btn-block-sm">Submit</button></center>
+	  </div>
+    </div>
+  </div>
+</div> 
+</div>
+		</div>
 			  </div>
-			  </div>
-			  </div>
-			  </div>
-			  </div>
-			  </div>
-			  <center><button type="button" class=" btn btn-primary btn-block-sm">Submit</button></center>
-			  </div>
-			  </div>
-            </div>
-          </div>
-          
-        </div>
-    </section>
-
-    <footer>
+			  </div>	  
+		</section>
+	
+	  <footer>
       <div class="container">
         <p>WeddingCart Copyright &copy; 2015, All Rights Reserved</p>
       </div>

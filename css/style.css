@@ -11,6 +11,61 @@ body{
     margin-bottom: 30px;
 }
 
+.modal-header, h4, .close {
+      background-color:#FF9900;
+      color:white !important;
+      text-align: center;
+      font-size: 20px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  .lbl-txt
+  {
+  font-size:16px;
+  color:#0066FF;
+  }
+	
+  .formlbl
+  {
+  font-size:13px;
+  color:#0033FF;
+  text-align:center;
+  }
+  .formlbl2
+  {
+  font-size:16px;
+  color:#999999;
+  }
+
+.groom_bright
+{
+margin-left:5px;
+ margin-right:5px; 
+ margin-top:5px;
+  margin-bottom:5px;
+   text-align:center;
+}
+
+.heading1
+{
+font-size:24px;
+}
+.venue
+{
+text-align:center;
+}
+.cardAdd1
+{
+margin-left:20px; 
+min-width:40px;
+}
+.cardAdd2
+{
+ margin-right:20px; 
+ text-align:right;
+}
+
 header{
   padding-top: 25px;
   min-height: 100px;
@@ -92,6 +147,15 @@ h3{
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
+.heading4
+{
+text-align:center;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:28px;
+font-stretch:narrower;
+font-style:italic;
+}
+
 .panel-default{
   border: none;
 }
@@ -121,7 +185,8 @@ h3{
 }
 
 .wedding-details .panel-body{
-  text-align: center;
+  text-align:center;
+  
 }
 
 .parent-details{
@@ -192,11 +257,12 @@ h3{
 .bubble{
   float: left;
   position: relative;
-  width: 580px;
+  width:500px;
   min-height: 65px;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  background:#FFFFFF;
 }
 
 .bubble:after{

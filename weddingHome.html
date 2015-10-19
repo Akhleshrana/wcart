@@ -19,21 +19,102 @@
 
     <header>
       <div class="container">
-        <img src="img/logo1.png" class="logo" />
-      </div>
+        <img src="img/logo1.png" class="logo" />      </div>
     </header>
 
-    <section class="edit-wishlist">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="viewMessages.html">Messages</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <section class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-1"></div>
+          <div class="col-md-6 wedding-details">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><center>Wedding Details</center></h3>
+                            </div>
+              <div class="panel-body">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="head3">You are cordially invited to the wedding of</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<img class="thumbnail img-responsive" id="groomPhoto" src="img/mavatar.png" alt="" />
+</div>
+<div class="col-sm-4">
+<div class="groom_bright">
+<h1 class="heading1">Panakj Sati</h1>
+<p style="font-style:italic; font-family:'Courier New', Courier, monospace">weds</p>
+<h1 class="heading1">Amita RawaT</h1>
+</div>
+</div>
+<div class="col-sm-4">
+<img class="thumbnail" id="bridePhoto" src="img/favatar.png" alt="" />
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="groom_bright">
+<h3 class="head3">Pankaj Sati s/o Mr. and Mrs. HS Sati</h3> with <h3 class="head3">Amita Rawat d/o Mr. and Mrs. GK Rawat</h3> getting married on <h5>Friday</h5> <h5>23/12/2015</h5> at venue
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="venue">
+Nath palace , near kawlira Road , Balliwala Chawak, Dehdun.
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="venue">
+Your Heartely Welcome..........
+</div>
+</div>
+</div>
+<br />
+<div class="row">
+<div class="col-sm-6">
+<div class="cardAdd1">
+address1: address2: :address3
+</div>
+</div>
+<div class="col-sm-6">
+<div>
+address1: address2: :address3
+</div>
+</div>
 
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-sm-12 page-title">
-                <h5 class="heading4">Manage Wishlist</h5>
-              </div>
-            </div>
+</div> <!-- End panel body -->
+</div> <!-- End panel -->
+</div>
+
+
+          <div class="col-md-6 wishlist">
+		  <div class="panel">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><center>Wishlist</center></h3>
+		   </div>
+		  <div class="panel-body">
             <div class="row header-row">
               <div class="col-sm-2 column1">
                 <h5>S No.</h5>
@@ -65,25 +146,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+              <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -104,25 +174,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+             <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -143,25 +202,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+                <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -182,25 +230,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+               <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -221,25 +258,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+                <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -260,25 +286,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+                <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -299,25 +314,14 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+                <a href="payandmsg.html">Gift</a>
               </div>
             </div>
 
@@ -338,30 +342,29 @@
               </div>
               <div class="col-sm-3 column3">
                 <div class="input-group">
-                  <div class="input-group-addon">₹</div>
+                  <div class="input-group-addon">?</div>
                   <input class="form-control" type="text" name="name" value="">
                   <div class="input-group-addon">.00</div>
                 </div>
               </div>
 
               <div class="col-sm-2 column4">
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
+                <a href="payandmsg.html">Gift</a>
               </div>
             </div>
           </div>
+        </div>
+		</div>
+		</div>
+      </div>
+	  </div>
+    </section>
 
-          <div class="col-md-1"></div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">          </div>
+          <div class="col-md-4">          </div>
         </div>
       </div>
     </section>
